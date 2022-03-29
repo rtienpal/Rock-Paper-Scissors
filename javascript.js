@@ -1,7 +1,22 @@
-//adding this commit for "temp" branch
-
 let playerScore = 0;
 let computerScore = 0;
+
+let rock = document.querySelector("#rock");
+let paper = document.querySelector("#paper");
+let scissors = document.querySelector("#scissors");
+
+rock.addEventListener("click", game);
+paper.addEventListener("click", game);
+scissors.addEventListener("click", game);
+
+let choices = document.querySelector("#choices");
+let result = document.querySelector("#result");
+let textup = document.querySelector("#textup");
+
+
+let score = document.querySelector("#score");
+score.textContent = "You "+playerScore+" X "+computerScore+" Bot";
+
 
 function computerPlay()  {
     let randomNumber = Math.floor(Math.random()*100) + 1;
@@ -18,6 +33,7 @@ function playerPlay(round) {
         return playerPlay(round);
     }
 }
+
 
 function win (playerSelection) {
     playerScore++;
@@ -42,7 +58,7 @@ function lose (playerSelection) {
 }
 
 function playRound(playerSelection, computerSelection) {
-    console.log('player selection = '+playerSelection+' computer selection = '+computerSelection);
+    choices.textContent = ('Your pick = '+playerSelection+' // Bot pick = '+computerSelection);
     if (playerSelection === computerSelection) {
         return 'Tie! Both are '+playerSelection;
     } else if (playerSelection === 'ROCK'){
@@ -64,13 +80,16 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
-    for (let i = 1; i <= 5; i++) {
-        let playerSelection = playerPlay(i);
-        let computerSelection = computerPlay();
-        console.log(playRound(playerSelection, computerSelection));
-    }
+
+function game(e) {
+    let playerSelection = e.target.id.toUpperCase();
+    let computerSelection = computerPlay();
+    result.textContent = playRound(playerSelection, computerSelection);
+    score.textContent = "You "+playerScore+" X "+computerScore+" Bot";
+    textup.textContent = "Round "+(playerScore + computerScore+1)+": Choose your option:";
+    
     console.log('End of 5 rounds! Player '+playerScore+' x '+computerScore+' Computer');
 }
 
-game();
+
+

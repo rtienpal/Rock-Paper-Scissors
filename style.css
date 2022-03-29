@@ -1,0 +1,46 @@
+html {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#container {
+  background-color: #dcdcdc;
+  padding: 30px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+span {
+  color: blue;
+}
+
+#options {
+  display: flex;
+  gap: 80px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-color: blue;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+#rock,
+#paper,
+#scissors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
