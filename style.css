@@ -14,14 +14,13 @@
   margin: 0;
 }
 
-
 html {
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
   /* footer support */
   position: relative;
   min-height: 100%;
-  }
+}
 
 #header {
   display: flex;
@@ -35,7 +34,7 @@ html {
 body {
   background-color: var(--primary-dark);
   color: var(--primary-light);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -78,6 +77,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 #rock:hover,
@@ -90,19 +92,22 @@ body {
 #rock,
 #paper,
 #scissors {
-  font-size: 120px;
+  font-size: 100px;
   width: 150px;
   height: 150px;
   border-style: solid;
   background-color: var(--secondary-dark);
   border-radius: 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 #reset {
   align-self: flex-end;
   border-style: solid;
   background-color: var(--secondary-dark);
-  text-align:center;
+  text-align: center;
   padding: 2px;
 }
 
@@ -154,10 +159,6 @@ body {
   #scissors {
     width: 100px;
     height: 100px;
-    font-size: 80px;
+    font-size: 70px;
   }
-
-
-
-  
 }
