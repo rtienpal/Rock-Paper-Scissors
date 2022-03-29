@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game - Best of 5</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container">
-        <div id="textup">Round 1: Choose your option:
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header">ROCK PAPER SCISSORS</section>
+    <section id="container">
+      <div id="result">Choose your weapon, Good Luck!</div>
+      <div id="opt-score">
+        <div id="player-opt-score">
+          <div id="player-opt">❔</div>
+          <div id="player-score">Player: 0</div>
         </div>
-
-        <div id="options">
-            <div id="rockdiv">
-                <img src="/images/rock.png" id="rock">
-                <p>Rock</p>
-            </div>
-            <div id="paperdiv">
-                <img src="/images/paper.png" id="paper">
-                <p>Paper</p>
-            </div>
-            <div id="scissorsdiv">
-                <img src="/images/scissors.png" id="scissors">
-                <p>Scissors</p>
-            </div>
+        <div id="computer-opt-score">
+          <div id="computer-opt">❔</div>
+          <div id="computer-score">Bot: 0</div>
         </div>
+      </div>
 
-        <div id="choices"></div>
-        <div id="result"></div>
-        <div id="score">You 0 x 0 Bot</div>
-
+      <div id="options">
+        <div id="rockdiv">
+          <div id="rock">✊</div>
+          <div>Rock</div>
         </div>
-    </div>
+        <div id="paperdiv">
+          <div id="paper">✋</div>
+          <div>Paper</div>
+        </div>
+        <div id="scissorsdiv">
+          <div id="scissors">✌</div>
+          <div>Scissors</div>
+        </div>
+      </div>
+
+      <div id="reset">RESET</div>
+    </section>
 
 
 
+    <section id="footer">Copyright © 2022 Rafael Uen <a href="https://github.com/rtienpal/" target="_blank">
+        <i class="fab fa-github"></i
+      ></a></section>
 
     <script src="javascript.js" defer></script>
-</body>
+  </body>
 </html>

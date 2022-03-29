@@ -1,0 +1,29 @@
+[33mcommit 0bfc2d886b68850d75fd78da295ce863436bb456[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: Rafael Uen <rafaeluen@gmail.com>
+Date:   Mon Mar 28 22:31:15 2022 -0300
+
+    added ui and messages in DOM, and not in the console anymore
+
+[33mcommit b2b4c06d231d69677cdaead9152fc4edb50201a0[m[33m ([m[1;31morigin/temp[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mtemp[m[33m)[m
+Author: Rafael Uen <rafaeluen@gmail.com>
+Date:   Tue Mar 22 20:38:58 2022 -0300
+
+    adding comment on first line of javascript file for test
+
+[33mcommit 8bea627283122df26b4709fd959faf6e6b9dcdbd[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rafael Uen <rafaeluen@gmail.com>
+Date:   Fri Mar 11 19:59:15 2022 -0300
+
+    Programmed for 5 rounds, all showing in console.log
+
+[33mcommit 180dee582ee07df326372f45f5571c5ad7677063[m
+Author: Rafael Uen <rafaeluen@gmail.com>
+Date:   Thu Mar 10 21:06:31 2022 -0300
+
+    Started putting choices for first round of game
+
+[33mcommit 88073b33c16811f4c824c7e14748d682f35a8d21[m
+Author: rtienpal <93673309+rtienpal@users.noreply.github.com>
+Date:   Thu Mar 10 20:33:12 2022 -0300
+
+    Create README.md

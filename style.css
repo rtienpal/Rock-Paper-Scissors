@@ -1,20 +1,69 @@
+:root {
+  --primary-light: #ddd;
+  --primary-dark: #222831;
+  --secondary-dark: #393e46;
+  --secondary-dark-hover: #4a4f57;
+  --secondary-dark-active: #5b5f68;
+  --header: #111720;
+  --primary-yellow: #fac650;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 html {
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+  }
+
+#header {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  background-color: var(--header);
+  font-size: 32px;
+  color: var(--primary-yellow);
+}
+
+body {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  font-family: 'Roboto', sans-serif;
 }
 
 #container {
   background-color: #dcdcdc;
   padding: 30px;
-  margin: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
-span {
-  color: blue;
+#opt-score {
+  display: flex;
+  gap: 100px;
+}
+
+#player-opt-score,
+#computer-opt-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player-opt,
+#computer-opt {
+  font-size: 120px;
 }
 
 #options {
@@ -23,24 +72,92 @@ span {
   text-align: center;
 }
 
-img {
-  width: 150px;
-  height: 150px;
-  padding: 20px;
-  background-color: antiquewhite;
-  border-style: solid;
-  border-color: blue;
+#rockdiv,
+#paperdiv,
+#scissorsdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-img:hover {
+#rock:hover,
+#paper:hover,
+#scissors:hover {
   transform: scale(1.1);
+  background-color: var(--secondary-dark-hover);
 }
 
 #rock,
 #paper,
 #scissors {
+  font-size: 120px;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  background-color: var(--secondary-dark);
+  border-radius: 10px;
+}
+
+#reset {
+  align-self: flex-end;
+  border-style: solid;
+  background-color: var(--secondary-dark);
+  text-align:center;
+  padding: 2px;
+}
+
+#reset:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-dark-hover);
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-light);
+  font-size: 20px;
+  background-color: var(--primary-dark);
+}
+
+.fa-github {
+  color: var(--primary-light);
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 550px) {
+  #header {
+    font-size: 18px;
+  }
+
+  #container {
+    font-size: 20px;
+  }
+
+  #options {
+    gap: 10px;
+  }
+
+  #rock,
+  #paper,
+  #scissors {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }
+
+
+
+  
 }
